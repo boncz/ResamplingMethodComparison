@@ -8,7 +8,7 @@
 
 The purpose of this project is to enhance my understanding of interpreting the results of machine learning models and evaluating various performance metrics, including confusion matrices, accuracy, precision, recall, F1 score, and ROC AUC. Additionally, I aim to gain insights into the importance and application of data resampling techniques. By exploring different resampling methods and their impacts on a well-known credit card fraud detection dataset from Kaggle, I hope to deepen my knowledge of when and why resampling might be beneficial.
 
-This project can also serve as a valuable resource for others looking to improve their skills in these areas. By providing a detailed analysis and comparison of resampling techniques, it offers a practical guide for anyone interested in learning about the effects of data resampling on model performance. Whether you are a student, data enthusiast, or professional, you can use this project to guide your learning and apply similar techniques to your own datasets.
+This project also offers a practical guide for anyone interested in learning about the effects of data resampling on Logistic Regression and Random Forest model performance.
 
 
 
@@ -70,42 +70,90 @@ SMOTE + ENN is used when the goal is to generate synthetic samples and simultane
 
 After testing various resampling techniques with both logistic regression and random forest models, it is clear that random forest consistently outperforms logistic regression in the task of credit card fraud detection. This conclusion is drawn from the analysis of performance metrics such as accuracy, precision, recall, F1 score, and ROC AUC across different resampling methods.
 
-### Comparison of Resampling Techniques with Random Forest
+## Performance Metrics
 
-1. **Original Imbalanced Data**
-    - **Accuracy:** 0.9995962220427653
-    - **Precision:** 0.9310344827586207
-    - **Recall:** 0.826530612244898
-    - **F1 Score:** 0.8756756756756757
-    - **ROC AUC:** 0.9132125486660618
+### 1. **Original Imbalanced Data**
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <div style="flex: 1;">
+        <ul>
+            <li><strong>Accuracy:</strong> 0.9995962220427653</li>
+            <li><strong>Precision:</strong> 0.9310344827586207</li>
+            <li><strong>Recall:</strong> 0.826530612244898</li>
+            <li><strong>F1 Score:</strong> 0.8756756756756757</li>
+            <li><strong>ROC AUC:</strong> 0.9132125486660618</li>
+        </ul>
+    </div>
+    <div>
+        <img src="rf_cm.png" alt="Confusion Matrix RF" width="200" style="margin-left: 20px;">
+    </div>
+</div>
 
-2. **SMOTE**
-    - **Accuracy:** 0.9994733330992591
-    - **Precision:** 0.8695652173913043
-    - **Recall:** 0.8163265306122449
-    - **F1 Score:** 0.8421052631578948
-    - **ROC AUC:** 0.9080577503933481
+### 2. **SMOTE**
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <div style="flex: 1;">
+        <ul>
+            <li><strong>Accuracy:</strong> 0.9994733330992591</li>
+            <li><strong>Precision:</strong> 0.8695652173913043</li>
+            <li><strong>Recall:</strong> 0.8163265306122449</li>
+            <li><strong>F1 Score:</strong> 0.8421052631578948</li>
+            <li><strong>ROC AUC:</strong> 0.9080577503933481</li>
+        </ul>
+    </div>
+    <div>
+        <img src="rf_cm_smote.png" alt="Confusion Matrix RF SMOTE" width="200" style="margin-left: 20px;">
+    </div>
+</div>
 
-3. **ADASYN**
-    - **Accuracy:** 0.9994382219725431
-    - **Precision:** 0.8666666666666667
-    - **Recall:** 0.7959183673469388
-    - **F1 Score:** 0.8297872340425533
-    - **ROC AUC:** 0.8978536687606951
+### 3. **ADASYN**
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <div style="flex: 1;">
+        <ul>
+            <li><strong>Accuracy:</strong> 0.9994382219725431</li>
+            <li><strong>Precision:</strong> 0.8666666666666667</li>
+            <li><strong>Recall:</strong> 0.7959183673469388</li>
+            <li><strong>F1 Score:</strong> 0.8297872340425533</li>
+            <li><strong>ROC AUC:</strong> 0.8978536687606951</li>
+        </ul>
+    </div>
+    <div>
+        <img src="rf_cm_adasyn.png" alt="Confusion Matrix RF ADASYN" width="200" style="margin-left: 20px;">
+    </div>
+</div>
 
-4. **SMOTE Tomek**
-    - **Accuracy:** 0.9995084442259752
-    - **Precision:** 0.8888888888888888
-    - **Recall:** 0.8163265306122449
-    - **F1 Score:** 0.851063829787234
-    - **ROC AUC:** 0.9080753362121439
+### 4. **SMOTE Tomek**
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <div style="flex: 1;">
+        <ul>
+            <li><strong>Accuracy:</strong> 0.9995084442259752</li>
+            <li><strong>Precision:</strong> 0.8888888888888888</li>
+            <li><strong>Recall:</strong> 0.8163265306122449</li>
+            <li><strong>F1 Score:</strong> 0.851063829787234</li>
+            <li><strong>ROC AUC:</strong> 0.9080753362121439</li>
+        </ul>
+    </div>
+    <div>
+        <img src="rf_cm_smotetomek.png" alt="Confusion Matrix RF SMOTE Tomek" width="200" style="margin-left: 20px;">
+    </div>
+</div>
 
-5. **SMOTE ENN**
-    - **Accuracy:** 0.9993153330290369
-    - **Precision:** 0.7864077669902912
-    - **Recall:** 0.826530612244898
-    - **F1 Score:** 0.8059701492537313
-    - **ROC AUC:** 0.9130718621156959
+### 5. **SMOTE ENN**
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <div style="flex: 1;">
+        <ul>
+            <li><strong>Accuracy:</strong> 0.9993153330290369</li>
+            <li><strong>Precision:</strong> 0.7864077669902912</li>
+            <li><strong>Recall:</strong> 0.826530612244898</li>
+            <li><strong>F1 Score:</strong> 0.8059701492537313</li>
+            <li><strong>ROC AUC:</strong> 0.9130718621156959</li>
+        </ul>
+    </div>
+    <div>
+        <img src="rf_cm_smoteenn.png" alt="Confusion Matrix RF SMOTE ENN" width="200" style="margin-left: 20px;">
+    </div>
+</div>
+
+
+
 
 ## Conclusion
 
