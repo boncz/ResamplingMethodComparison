@@ -83,8 +83,8 @@ After testing various resampling techniques with both logistic regression and ra
             <li><strong>ROC AUC:</strong> 0.9132125486660618</li>
         </ul>
     </div>
-    <div>
-        <img src="rf_cm.png" alt="Confusion Matrix RF" width="200" style="margin-left: 20px;">
+    <div style="flex-shrink: 0; margin-left: 20px;">
+        <img src="rf_cm.png" alt="Confusion Matrix RF" width="325">
     </div>
 </div>
 
@@ -99,8 +99,8 @@ After testing various resampling techniques with both logistic regression and ra
             <li><strong>ROC AUC:</strong> 0.9080577503933481</li>
         </ul>
     </div>
-    <div>
-        <img src="rf_cm_smote.png" alt="Confusion Matrix RF SMOTE" width="200" style="margin-left: 20px;">
+    <div style="flex-shrink: 0; margin-left: 20px;">
+        <img src="rf_cm_smote.png" alt="Confusion Matrix RF SMOTE" width="325">
     </div>
 </div>
 
@@ -115,8 +115,8 @@ After testing various resampling techniques with both logistic regression and ra
             <li><strong>ROC AUC:</strong> 0.8978536687606951</li>
         </ul>
     </div>
-    <div>
-        <img src="rf_cm_adasyn.png" alt="Confusion Matrix RF ADASYN" width="200" style="margin-left: 20px;">
+    <div style="flex-shrink: 0; margin-left: 20px;">
+        <img src="rf_cm_adasyn.png" alt="Confusion Matrix RF ADASYN" width="325">
     </div>
 </div>
 
@@ -131,8 +131,8 @@ After testing various resampling techniques with both logistic regression and ra
             <li><strong>ROC AUC:</strong> 0.9080753362121439</li>
         </ul>
     </div>
-    <div>
-        <img src="rf_cm_smotetomek.png" alt="Confusion Matrix RF SMOTE Tomek" width="200" style="margin-left: 20px;">
+    <div style="flex-shrink: 0; margin-left: 20px;">
+        <img src="rf_cm_smotetomek.png" alt="Confusion Matrix RF SMOTE Tomek" width="325">
     </div>
 </div>
 
@@ -147,8 +147,8 @@ After testing various resampling techniques with both logistic regression and ra
             <li><strong>ROC AUC:</strong> 0.9130718621156959</li>
         </ul>
     </div>
-    <div>
-        <img src="rf_cm_smoteenn.png" alt="Confusion Matrix RF SMOTE ENN" width="200" style="margin-left: 20px;">
+    <div style="flex-shrink: 0; margin-left: 20px;">
+        <img src="rf_cm_smoteenn.png" alt="Confusion Matrix RF SMOTE ENN" width="325">
     </div>
 </div>
 
